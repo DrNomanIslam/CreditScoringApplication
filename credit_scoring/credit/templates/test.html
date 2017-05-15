@@ -1,0 +1,24 @@
+<html>
+<body>
+<title>Credit Scoring Software</title>
+<style>
+	th{
+		text-align:left
+	}
+</style>
+<h1 align="center">Credit Scoring Software<br><br></h1>
+<p align="center">{{ result }}</p>
+
+<form method="post" action="/credit/">
+	{% csrf_token %}
+	<table	align="center">
+		{{form}}
+	</table>
+	<br>
+	<p align="center">
+	<input type="submit">
+	</p>
+</form>
+
+</body>
+</html>
